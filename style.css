@@ -1,9 +1,11 @@
 :root {
     --bg-color-dark-700: #3F2236;
     --bg-color-dark-600: #562E49;
-    --bg-color-dark-600--opacity: rgba(86, 46, 73, 0.8);
+    --bg-color-dark-600--opacity: rgba(86, 46, 73, 0.9);
+    --bg-color-medium-700: #BE1D4A;
     --bg-color-medium-600: #EA557F;
     --text-color-light-200: #eee;
+    --text-color-dark-700: #3F2236;
 }
 
 html {
@@ -37,7 +39,12 @@ a {
 
 h1 {
     font-size: 6rem;
-    color: var(--text-color-light-200)
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 3.6rem;
+    text-transform: uppercase;
 }
 
 p {
@@ -45,9 +52,14 @@ p {
 }
 
 
+
 /* layout start */
 .m--20 {
     margin: 20px
+}
+
+.p-20 {
+    padding: 20px
 }
 
 .relative {
@@ -55,6 +67,7 @@ p {
 }
 
 .wrapper {
+    height: 100%;
     max-width: 1260px;
     margin: 0 auto;
 }
@@ -63,26 +76,36 @@ p {
     display: flex;
     align-items: center;
     align-content: center;
+    justify-content: center;
     height: 100%;
 }
 
-.flex__6 {
+.flex--6 {
     width: 50%;
     height: 100%;
     box-sizing: border-box;
 
 }
 
-.flex__column {
-    display: flex;
+.flex--column {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+}
+
+.flex--start {
+    justify-content: flex-start;
 }
 
 /* layout end */
 
 /* bg start */
+.bg__medium600 {
+    background-color: var(--bg-color-medium-600);
+}
+
+.bg__medium700 {
+    background-color: var(--bg-color-medium-700);
+}
+
 .bg__dark600 {
     background-color: var(--bg-color-dark-600);
 }
@@ -95,13 +118,62 @@ p {
     background-color: var(--bg-color-dark-600--opacity);
 }
 
+.bg-image {
+    background-image: url("/img/bg1.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* animation-name: bg-animation;
+    animation-delay: 0s;
+    animation-direction: alternate;
+    animation-duration: 60s;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    backdrop-filter: ; */
+}
+
+.bg-image--dark {
+    background-blend-mode: difference;
+    background-color: white;
+}
+
+.bg-image--pink {
+    background-blend-mode: lighten;
+    background-color: var(--bg-color-medium-600);
+
+}
+
+.bg-image--fixed {
+    background-attachment: fixed;
+}
+
+@keyframes bg-animation {
+    0% {
+        background-position: 100%;
+
+    }
+
+    100% {
+        background-position: 120%;
+    }
+
+}
+
+
+
 /* bg end */
 
 
 
 /* txt start */
-.txt__light {
+.font--light {
     color: var(--text-color-light-200)
+}
+
+.font--dark {
+    color: var(--text-color-dark-700)
 }
 
 /* txt end */
@@ -114,6 +186,7 @@ p {
     border: 1px solid var(--bg-color-medium-600);
     background-color: var(--bg-color-medium-600);
     cursor: pointer;
+    color: var(--text-color-light-200);
     font-size: 1.4rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -140,7 +213,6 @@ p {
     z-index: 999;
     height: 100px;
     width: 100%;
-    background-color: white;
 }
 
 .header__logo {}
@@ -196,10 +268,9 @@ p {
 }
 
 .hero {
-    position: absolute;
     width: 100%;
     height: 80vh;
-    background-image: url("hero1.jpg");
+    background-image: url("img/hero1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -212,6 +283,7 @@ p {
 
 .hero__box {
     width: 100%;
+    height: auto;
     padding: 20px;
 }
 
@@ -220,9 +292,7 @@ p {
     text-align: center;
 }
 
-.hero__h1 {
-    text-transform: uppercase;
-}
+.hero__h1 {}
 
 .hero__span {
     font-size: 4.8rem;
@@ -241,6 +311,41 @@ p {
     background-color: var(--bg-color-dark-700);
     white-space: nowrap;
 
+}
+
+
+.best {
+    height: 70vh;
+    padding-bottom: 80px;
+
+}
+
+.best__image {
+    height: 100%;
+}
+
+.barek_img {
+    background-image: url(img/slodki-barek.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 60%;
+    /* background-attachment: fixed; */
+}
+
+.team {
+    height: 100vh;
+    transform: translateY(-80px);
+}
+
+.team__member {
+    width: 100%
+}
+
+.team__title {
+    height: 80px;
+    margin-right: 40px;
+    padding: 0 20px;
+    line-height: 80px;
 }
 
 /* main end */
