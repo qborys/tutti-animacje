@@ -430,62 +430,7 @@ small {
 
 }
 
-@media (max-width: 768px) {
 
-    html {
-        font-size: 8px;
-    }
-
-    .flex {
-        flex-direction: column;
-    }
-
-    .flex--6 {
-        width: 100%;
-    }
-
-    .circle {
-        border-radius: 50%;
-        width: 10rem;
-        height: 10rem;
-    }
-
-    .circle--animation {
-        animation: paused;
-    }
-
-    .header {
-        position: relative;
-
-    }
-
-    .nav {
-        transform: translateY(0);
-        height: 100vh;
-        display: none;
-    }
-
-    .main {
-        margin-top: 0
-    }
-
-    .hero {
-        height: calc(100vh - 100px);
-    }
-
-    .hero__box {
-        margin-bottom: 80px;
-    }
-
-    .hero__left {
-        display: none;
-    }
-
-    .hero__news {
-        transform: translateY(0);
-    }
-
-}
 
 .best {
     height: 80vh;
@@ -531,11 +476,112 @@ small {
 }
 
 .member__text {
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .member__motto {
     width: 100%
+}
+
+@media (max-width: 768px) {
+
+    html {
+        font-size: 7px;
+    }
+
+    small {
+        font-size: 3rem;
+    }
+
+    .m--20 {
+        margin: 20px
+    }
+
+    .mr--40 {
+        margin-right: 40px;
+    }
+
+    .ml--40 {
+        margin-left: 40px;
+    }
+
+    .p--20 {
+        padding: 20px
+    }
+
+    .p--80 {
+        padding: 40px 20px
+    }
+
+    .ty--40 {
+        transform: translateY(0);
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+
+    .flex--6 {
+        width: 100%;
+    }
+
+    .circle {
+        border-radius: 50%;
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .circle--animation {
+        animation: paused;
+    }
+
+    .header {
+        position: relative;
+
+    }
+
+    .nav {
+        transform: translateY(0);
+        height: 100vh;
+        display: none;
+    }
+
+    .main {
+        margin-top: 0
+    }
+
+    .hero {
+        height: calc(100vh - 100px);
+    }
+
+    .hero__box {
+        margin-bottom: 40px;
+    }
+
+    .hero__left {
+        display: none;
+    }
+
+    .hero__news {
+        height: 40px;
+        transform: translateY(0);
+
+    }
+
+    .team {
+        margin-bottom: 0;
+
+    }
+
+    .team__member {
+        border: 15px solid transparent;
+    }
+
+    .member__text {
+        text-align: center;
+    }
+
+
 }
 
 /* team end */
