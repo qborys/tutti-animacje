@@ -515,6 +515,14 @@ small {
         text-align: center;
     }
 
+    .bg-image {
+        background-size: cover;
+    }
+
+    .bg-image--fixed {
+        background-attachment: scroll;
+    }
+
     .circle {
         width: 100px;
         height: 100px;
