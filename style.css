@@ -493,22 +493,6 @@ small {
         font-size: 3rem;
     }
 
-    .m--20 {
-        margin: 20px
-    }
-
-    .mr--40 {
-        margin-right: 40px;
-    }
-
-    .ml--40 {
-        margin-left: 40px;
-    }
-
-    .p--20 {
-        padding: 20px
-    }
-
     .p--80 {
         padding: 40px 20px
     }
@@ -523,12 +507,19 @@ small {
 
     .flex--6 {
         width: 100%;
+        margin: 0 10px;
+    }
+
+    .flex--row {
+        flex-direction: row;
+        text-align: center;
     }
 
     .circle {
-        border-radius: 50%;
-        width: 10rem;
-        height: 10rem;
+        width: 100px;
+        height: 100px;
+        background: none;
+        ;
     }
 
     .circle--animation {
@@ -551,7 +542,7 @@ small {
     }
 
     .hero {
-        height: calc(100vh - 100px);
+        height: calc(100vh - 150px);
     }
 
     .hero__box {
@@ -566,6 +557,14 @@ small {
         height: 40px;
         transform: translateY(0);
 
+    }
+
+    .best {
+        height: 50vh;
+    }
+
+    .barek_img {
+        background-size: contain;
     }
 
     .team {
