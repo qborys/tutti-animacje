@@ -1,9 +1,11 @@
 :root {
     --bg-color-dark-700: #3F2236;
     --bg-color-dark-600: #562E49;
-    --bg-color-dark-600--opacity: rgba(86, 46, 73, 0.9);
+    --bg-color-dark-600--o: rgba(86, 46, 73, 0.9);
     --bg-color-medium-700: #BE1D4A;
     --bg-color-medium-600: #EA557F;
+    --bg-color-medium-200: #FFD4ED;
+    --bg-color-medium-200--o: rgba(255, 212, 237, 0.7);
     --text-color-light-200: #eee;
     --text-color-dark-700: #3F2236;
 }
@@ -21,6 +23,7 @@ html {
 body {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 10px;
+
 }
 
 ul {
@@ -37,20 +40,58 @@ a {
     text-decoration: none;
 }
 
+h1,
+h2,
+h3 {
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
 h1 {
     font-size: 6rem;
-    text-transform: uppercase;
+    font-weight: 700;
 }
 
 h2 {
-    font-size: 3.6rem;
-    text-transform: uppercase;
+    font-size: 4.8rem;
+
 }
+
+h3 {
+    font-size: 3.6rem;
+    text-transform: none;
+}
+
+h4 {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
 
 p {
     font-size: 1.6rem;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
 }
 
+/* txt start */
+.font--light {
+    color: var(--text-color-light-200)
+}
+
+.font--dark {
+    color: var(--text-color-dark-700)
+}
+
+small {
+    font-size: smaller;
+}
+
+/* txt end */
 
 
 /* layout start */
@@ -58,8 +99,24 @@ p {
     margin: 20px
 }
 
-.p-20 {
+.mr--40 {
+    margin-right: 40px;
+}
+
+.ml--40 {
+    margin-left: 40px;
+}
+
+.p--20 {
     padding: 20px
+}
+
+.p--80 {
+    padding: 40px 80px
+}
+
+.ty--40 {
+    transform: translateY(-40px);
 }
 
 .relative {
@@ -91,13 +148,40 @@ p {
     flex-direction: column;
 }
 
+.flex--column-reverse {
+    flex-direction: column-reverse;
+}
+
+.flex--end {
+    justify-content: flex-end;
+}
+
 .flex--start {
     justify-content: flex-start;
+}
+
+.flex--order2 {
+    order: 2;
+}
+
+.bar--80 {
+    width: 100%;
+    height: 90px;
+    padding: 0 20px;
+    line-height: 90px;
 }
 
 /* layout end */
 
 /* bg start */
+.bg__medium200 {
+    background-color: var(--bg-color-medium-200);
+}
+
+.bg__medium200--opacity {
+    background-color: var(--bg-color-medium-200--o);
+}
+
 .bg__medium600 {
     background-color: var(--bg-color-medium-600);
 }
@@ -115,7 +199,7 @@ p {
 }
 
 .bg__dark600--opacity {
-    background-color: var(--bg-color-dark-600--opacity);
+    background-color: var(--bg-color-dark-600--o);
 }
 
 .bg-image {
@@ -167,16 +251,7 @@ p {
 
 
 
-/* txt start */
-.font--light {
-    color: var(--text-color-light-200)
-}
 
-.font--dark {
-    color: var(--text-color-dark-700)
-}
-
-/* txt end */
 
 /* btns start */
 .btn {
@@ -204,6 +279,41 @@ p {
     opacity: 80%;
 }
 
+.circle {
+    border-radius: 50%;
+    width: 40rem;
+    height: 40rem;
+}
+
+.circle--animation {
+    animation: bubble 30s infinite linear;
+}
+
+
+@keyframes bubble {
+    0% {
+        transform: translate(-25%, 20%) rotate(0deg);
+    }
+
+    25% {
+        transform: translate(-40%, 0%) rotate(-5deg);
+    }
+
+    50% {
+        transform: translate(0%, -15%) rotate(-8deg);
+    }
+
+    75% {
+        transform: translate(15%, 0%) rotate(4deg);
+    }
+
+    100% {
+        transform: translate(-25%, 20%) rotate(0deg);
+    }
+
+
+}
+
 /* other end */
 
 /* header start */
@@ -213,6 +323,7 @@ p {
     z-index: 999;
     height: 100px;
     width: 100%;
+
 }
 
 .header__logo {}
@@ -315,9 +426,7 @@ p {
 
 
 .best {
-    height: 70vh;
-    padding-bottom: 80px;
-
+    height: 80vh;
 }
 
 .best__image {
@@ -332,20 +441,42 @@ p {
     /* background-attachment: fixed; */
 }
 
+/* team start */
 .team {
-    height: 100vh;
-    transform: translateY(-80px);
+    /* transform: translateY(-80px); */
+    margin-bottom: -120px;
+
 }
 
-.team__member {
+.box {
+    width: 100%;
+    max-height: 390px;
+    overflow: hidden;
+}
+
+.box__image {
     width: 100%
 }
 
-.team__title {
-    height: 80px;
-    margin-right: 40px;
-    padding: 0 20px;
-    line-height: 80px;
+.team__member {
+    z-index: 1;
 }
+
+
+
+.member__name {
+    width: 100%
+}
+
+.member__text {
+    font-size: 20px;
+}
+
+.member__motto {
+    width: 100%
+}
+
+/* team end */
+
 
 /* main end */

@@ -13,7 +13,7 @@
 
 <body>
 
-    <header class="header bg-image bg-image--pink">
+    <header class="header bg-image">
         <div class="wrapper flex">
             <div class="header__logo flex--6">
                 <img class="header__img" src="img/logo.svg" alt="logo Tutti-Frutti animacje dla dzieci" srcset="">
@@ -54,25 +54,84 @@
                     <!-- <img class="best__image" src="img/slodki-barek.png" alt="" srcset=""> -->
                 </article>
                 <article class="flex flex--column flex--6">
-                    <h1>Słodki Barek</h1>
-                    <h2>Popcorn</h2>
-                    <h2>Wata cukrowa</h2>
+                    <div class="circle circle--animation flex flex--column bg__medium200--opacity">
+                        <h2>Słodki Barek</h2>
+                        <h3>Popcorn</h3>
+                        <h3>Wata cukrowa</h3>
+                    </div>
                 </article>
             </div>
         </section>
         <section class="bg-image bg-image--dark bg-image--fixed">
-            <div class="team wrapper">
-                <header class="team__title font--light bg__medium700">
-                    <h2>Nasi animatorzy</h2>
+            <div class="team wrapper flex flex--column font--light ty--40">
+                <header class="bar--80 bg__medium700">
+                    <div class="flex flex--6">
+                        <h2><small>Nasi Animatorzy</small></h2>
+                    </div>
                 </header>
+
+
                 <div class="flex">
-                    <article class="flex flex--column flex--start flex--6 bg__medium700">
-                        <img class="team__member" src="img/ada.jpg" alt="" srcset="">
+                    <article class="team__member flex flex--column flex--start flex--6">
+                        <div class=box>
+                            <img class="box__image" src="img/ada.jpg" alt="" srcset="">
+                        </div>
+                        <div class="member__txt">
+                            <header class="member__name bar--80 bg__medium700">
+                                <h3 class="flex">
+                                    Ada
+                                </h3>
+                            </header>
+                            <div class="bg__medium600 p--80">
+                                <p class="member__text">Zabawa to jego żywioł. Doskonale odnajduje się zarówno z dziećmi
+                                    jak i dorosłymi.
+                                    Człowiek orkeistra: gra, śpiewa, tańczy, stepuje. Prywatnie mąż jednej Żony, ojciec
+                                    cudownych trzech książąt i dwóch słodkich księżniczek.</p>
+                            </div>
+                            <footer class="member__motto flex bar--80 bg__medium700">
+                                <cite>
+                                    <h4>"Veni, vidi, vici"</h4>
+                                </cite>
+                            </footer>
+                        </div>
                     </article>
-                    <article class="flex flex--column flex--6 bg__dark600">
+                    <article class="team__member flex flex--column-reverse flex--end flex--6 ty--40">
+                        <div class=box>
+                            <img class="box__image" src="img/arek.jpg" alt="" srcset="">
+                        </div>
+
+                        <div class="member__txt">
+                            <header class="member__name bar--80 bg__dark700">
+                                <h3 class="flex">
+                                    Arek
+                                </h3>
+                            </header>
+                            <div class="member__text bg__dark600 p--80">
+                                <p class="member__text">Zabawa to jego żywioł. Doskonale odnajduje się zarówno z dziećmi
+                                    jak i dorosłymi.
+                                    Człowiek orkeistra: gra, śpiewa, tańczy, stepuje. Prywatnie mąż jednej Żony, ojciec
+                                    cudownych trzech książąt i dwóch słodkich księżniczek.</p>
+                            </div>
+                            <footer class="member__motto flex bar--80 bg__dark700">
+                                <cite>
+                                    <h4>"Veni, vidi, vici"</h4>
+                                </cite>
+                            </footer>
+
+                        </div>
 
                     </article>
                 </div>
+                <footer class="flex flex--end bar--80 bg__dark700 flex--order2 ty--40 font--light">
+                    <div class="flex flex--6">
+                        <h2><small>Specjaliści od zabawy</small></h2>
+                    </div>
+                </footer>
+            </div>
+        </section>
+        <section class="best bg-image bg-image--fixed font--dark">
+            <div class="team wrapper flex flex--column flex--start">
+
             </div>
         </section>
     </main>
