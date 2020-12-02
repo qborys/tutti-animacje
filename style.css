@@ -290,9 +290,9 @@ small {
     height: 40rem;
 }
 
-.circle--animation {
+/* .circle--animation {
     animation: bubble 30s infinite linear;
-}
+} */
 
 
 @keyframes bubble {
